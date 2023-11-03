@@ -1,0 +1,6 @@
+##########################################################
+These are python pyvisa-py drivers for the Siglent devices
+##########################################################
+
+oscilloscope: SDS 1104X-E
+function generator: SDG 1032X

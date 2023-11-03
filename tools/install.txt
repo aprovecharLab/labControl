@@ -1,0 +1,17 @@
+################################
+In Ubuntu Linux do:
+################################
+
+sudo apt update
+sudo apt install build-essential
+sudo snap install curl
+
+cd Downloads
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash ./Miniforge3-$(uname)-$(uname -m).sh
+
+cd 000_pythonEnvironments/mamba/pyAcousticsLab
+mamba create -n pyAcousticsLab jupyterlab -c conda-forge
+mamba env update --name pyAcousticsLab --file environment-pyAcousticsLab.yml 
+mamba activate pyAcousticsLab
+   

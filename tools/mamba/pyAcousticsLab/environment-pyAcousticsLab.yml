@@ -1,0 +1,39 @@
+name: pyAcousticsLab
+
+# to use: perform two steps ... make a jupyterlab barebones env, then activate and update with this yml file. For details see install.txt
+
+channels: 
+  - conda-forge
+
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  #
+  - jupytext
+  - ipywidgets
+  - ipympl
+  #  
+  - scikit-learn
+  - scikit-image
+  #
+  - h5py
+  #
+  - seaborn
+  - bokeh
+  #
+  - tqdm
+  - arrow
+  #
+  - pywavelets
+  - pycwt
+#
+  - pip
+  - pip:
+    - zeroconf
+    - pyvisa-py
+    - filterpy
+    - acoustics
+
